@@ -2,26 +2,136 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+* {
+  margin: 0;
+  padding: 0;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
+.body {
+  position: relative;
 }
 
+body::-webkit-scrollbar {
+  display: none;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
 body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+}
+
+.nav {
+  position: fixed;
+  width: 100vw;
+  height: 7vh;
+  /* background-color: white; */
+  z-index: 10;
+  display: flex;
+  border-bottom: solid black 0.1vw;
+  align-items: center;
+}
+
+.nav li {
+  position: relative;
+  left: 2vw;
+  text-decoration: none;
+  list-style-type: none;
+  color: rgb(0, 200, 255);
+  font-weight: 900;
+}
+
+.profile {
+  display: flex;
+  right: 0;
+  left: 68vw;
+  position: relative;
+}
+
+.profile div {
+  margin-right: 1vw;
+}
+
+.circleAvatar {
+  width: 4vw;
+  border-radius: 50%;
+  overflow: hidden;
+  z-index: 5;
+  position: relative;
+}
+
+.main {
+  position: relative;
+  display: flex;
+  width: 100vw;
+  top: 7vh;
+}
+
+.left-nav {
+  position: fixed;
+  width: 20vw;
+  /* background-color: red; */
+  height: 95vh;
+  border-right: solid black 0.1vw;
+  border-top-right-radius: 2vw;
+}
+
+.left-nav div {
+  color: black;
+  text-decoration: none;
+  font-size: 2vw;
+  left: 1vw;
+  position: relative;
+  font-weight: 700;
+}
+
+.right-data {
+  width: 80vw;
+  left: 20vw;
+  position: relative;
+  border-left: solid black 0.1vw;
+  /* border-top-left-radius: 2vw; */
+  display: flex;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.home {
+  border-left: solid black 0.1vw;
+  border-top-left-radius: 2vw;
+  overflow: hidden;
+}
+
+.home video {
+  position: fixed;
+  left: 50%;
+  transform: translate(-50%, 0);
+  top: -15vh;
+  z-index: -5;
+}
+
+.quote {
+  color: white;
+  font-size: 7vw;
+  font-weight: 900;
+  width: 45vw;
+  left: 2vw;
+  position: relative;
 }

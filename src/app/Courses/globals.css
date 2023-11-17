@@ -1,0 +1,81 @@
+.center-data {
+    /* background-color: blueviolet; */
+    border-right: solid black 0.1px;
+    border-left: solid black 0.1px;
+    border-top-left-radius: 2vw;
+    border-top-right-radius: 2vw;
+    overflow: hidden;
+    /* left: 20%; */
+    width: 49.8vw;
+    position: relative;
+}
+
+.right-form {
+    border-left: solid black 0.1vw;
+    border-top-left-radius: 2vw;
+    overflow: hidden;
+    right: 0%;
+    position: fixed;
+    width: 30vw;
+    height: 95vh;
+}
+
+.right-form form input {
+    margin: 2vw;
+}
+
+/* Course List */
+.course-list {
+    /* background-color: red; */
+    margin: 1vw;
+    padding: 1vvw;
+    border-top-right-radius: 1vw;
+    border-bottom-left-radius: 1vw;
+    border: solid black 1px;
+
+}
+
+.right-form form {
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.right-form form input {
+    position: relative;
+    left: 1vw;
+    width: 80%;
+    padding: 8px;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+    border-bottom: solid black 1px;
+}
+
+
+
+.no-render {
+    margin: 2vw;
+    background-color: gray;
+    color: black;
+
+}
+
+
+.li-li-c h5 {
+    font-size: 2vw;
+    font-weight: 700;
+}
+
+.li-li-c h6 {
+    font-size: 1.5vw;
+    font-weight: 700;
+}
+
+button {
+    background-color: red;
+    color: white;
+    position: relative;
+    padding: 2px 10px;
+    /* left: 1vw; */
+    border-radius: 2vw;
+}
